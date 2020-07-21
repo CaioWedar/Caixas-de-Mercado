@@ -1,18 +1,3 @@
-/*  Nome: Caio Alves Fagudes RA:19668771
-    Nome: Gabriel de Rezende Gonçalves RA: 19289420
-
-    - Projeto Base
-    - Opcional 1
-    - Opcional 5 (não conseguimos emitir relatório, optamos
-                  por inserir a pessoa especial na Lista mais vazia)
-
-    */
-
-
-
-
-
-
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
@@ -155,7 +140,7 @@ void tamanho(fila *inicio[], int diff, fila *inicioEspecial, int flag){
 
 	system("cls");
 
-	printf("O tempo é de %d segundos\n", diff);
+	printf("O tempo Ã© de %d segundos\n", diff);
 	gotoxy(1, 10);
 
 	fila * aux;
@@ -244,13 +229,13 @@ int main(){
 	do{
             textcolor(VERDE);
 
-	    printf("\tTempo de Inserção = %d s, Tempo de Remoção = %d s, Numero de Filas = %d e Tempo de Execução = %d s\n\n", qtTempoEntrada, qtTempoSaida, qtFilas, qtTempoExecucao);
+	    printf("\tTempo de InserÃ§Ã£o = %d s, Tempo de RemoÃ§Ã£o = %d s, Numero de Filas = %d e Tempo de ExecuÃ§Ã£o = %d s\n\n", qtTempoEntrada, qtTempoSaida, qtFilas, qtTempoExecucao);
 
         printf("1. Alterar quantidade de fila [0-100]\n");
         printf("2. Alterar tempo de entrada dos clientes\n");
         printf("3. Alterar tempo de saida\n");
-        printf("4. Alterar tempo de execução do programa\n");
-        printf("5. Começar programa\n");
+        printf("4. Alterar tempo de execuÃ§Ã£o do programa\n");
+        printf("5. ComeÃ§ar programa\n");
         printf("0. Sair.\n");
         printf("\n->:  ");
         scanf("%d", &opcoes);
@@ -261,7 +246,7 @@ int main(){
                 printf("Digite a quantidade de filas: ");
                 scanf("%d", &qtFilas);
                 if(qtFilas < 0 || qtFilas > 100){
-                    printf ("Valor inválido!\n");
+                    printf ("Valor invÃ¡lido!\n");
                     system("pause");
                     system("cls");
                     qtFilas = 0;
@@ -270,19 +255,19 @@ int main(){
             break;
 
             case 2:
-                printf("Digite, em segundos, o tempo em que cada cliente entrará na fila: ");
+                printf("Digite, em segundos, o tempo em que cada cliente entrarÃ¡ na fila: ");
                 scanf("%d", &qtTempoEntrada);
                 system("cls");
             break;
 
             case 3:
-                printf("Digite, em segundos, o tempo em que cada cliente será atendido: ");
+                printf("Digite, em segundos, o tempo em que cada cliente serÃ¡ atendido: ");
                 scanf("%d", &qtTempoSaida);
                 system("cls");
             break;
 
             case 4:
-                printf("Digite, em segundos, o tempo de execução do programa: ");
+                printf("Digite, em segundos, o tempo de execuÃ§Ã£o do programa: ");
                 scanf("%d", &qtTempoExecucao);
                 system("cls");
             break;
@@ -379,7 +364,7 @@ int main(){
 
                 textcolor(ROSA);
 
-                printf("\n\n ---------- \\ RELATÓRIO // ----------");
+                printf("\n\n ---------- \\ RELATÃ“RIO // ----------");
 
                 for(i=0; i< qtFilas; i++){
 
@@ -389,9 +374,9 @@ int main(){
 
                     printf("\n\nO maior da fila[%d] tempo de espera foi %d \n", i, maior[i]);
                     printf("O menor tempo[%d] de espera foi %d \n", i, menor[i]);
-                    printf("O tamanho da fila é de %d\n", total);
-                    printf("A quantidade de pessoas atendidas é de %d\n", countSaida[i]);
-                    printf("A média de tempo esperando é de %d s\n\n", media);
+                    printf("O tamanho da fila Ã© de %d\n", total);
+                    printf("A quantidade de pessoas atendidas Ã© de %d\n", countSaida[i]);
+                    printf("A mÃ©dia de tempo esperando Ã© de %d s\n\n", media);
 
 
                 }
@@ -407,7 +392,7 @@ int main(){
 
             default :
 
-                printf ("Valor inválido!\n");
+                printf ("Valor invÃ¡lido!\n");
                 system("pause");
                 system("cls");
         }
